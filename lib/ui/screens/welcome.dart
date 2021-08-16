@@ -7,7 +7,6 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFEF2E9),
       body: SafeArea(
         child: Center(
           child: Column(
@@ -43,7 +42,7 @@ class WelcomeScreen extends StatelessWidget {
               const SizedBox(height: 10),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/onboarding/carousel');
+                  Navigator.pushNamed(context, '/login_page');
                 },
                 child: const Text(
                   'Už mám účet',
